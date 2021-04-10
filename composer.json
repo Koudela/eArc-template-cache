@@ -1,0 +1,35 @@
+{
+    "name": "earc/template-cache",
+    "description": "eArc - the explicit architecture framework - caching component for earc/native-php-template-engine",
+    "type": "library",
+    "license": "MIT",
+    "version": "dev-0.0",
+    "authors": [
+        {
+            "name": "Thomas Koudela",
+            "email": "thomas@koudela.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "require": {
+        "php": "^8.0",
+        "earc/data": "^0.0",
+        "earc/native-php-template-engine": "^0.3",
+        "earc/data-filesystem": "^0.0"
+    },
+    "suggest": {
+        "ext-redis": "*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "\\" : "documentation/",
+            "eArc\\TemplateCache\\" : "src/",
+            "eArc\\TemplateCacheTests\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "symfony/var-dumper": "*"
+    }
+}
